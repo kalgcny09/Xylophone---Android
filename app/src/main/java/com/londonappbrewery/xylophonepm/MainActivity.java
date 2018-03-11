@@ -37,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
 
 
         // TODO: Load and get the IDs to identify the sounds
+        mCSoundId = mSoundPool.load(getApplicationContext(), R.raw.note1_c, 1);
+        mDSoundId = mSoundPool.load(getApplicationContext(), R.raw.note2_d, 1);
+        mESoundId = mSoundPool.load(getApplicationContext(), R.raw.note3_e, 1);
+        mFSoundId = mSoundPool.load(getApplicationContext(), R.raw.note4_f, 1);
+        mGSoundId = mSoundPool.load(getApplicationContext(), R.raw.note5_g, 1);
+        mASoundId = mSoundPool.load(getApplicationContext(), R.raw.note6_a, 1);
+        mBSoundId = mSoundPool.load(getApplicationContext(), R.raw.note7_b, 1);
 
 
     }
@@ -44,30 +51,46 @@ public class MainActivity extends AppCompatActivity {
     // TODO: Add the play methods triggered by the buttons
     public void playC(View v) {
         Log.d("Xylophone", "Red Button Clicked");
+
+
+        mSoundPool.play(mCSoundId, LEFT_VOLUME, RIGHT_VOLUME, PRIORITY, NO_LOOP, NORMAL_PLAY_RATE);
     }
 
     public void playD(View v) {
         Log.d("Xylophone", "Orange Button Clicked");
+
+        mSoundPool.play(mDSoundId, LEFT_VOLUME, RIGHT_VOLUME, PRIORITY, NO_LOOP, NORMAL_PLAY_RATE);
+
     }
 
     public void playE(View v) {
         Log.d("Xylophone", "Yellow Button Clicked");
+
+        mSoundPool.play(mESoundId, LEFT_VOLUME, RIGHT_VOLUME, PRIORITY, NO_LOOP, NORMAL_PLAY_RATE);
     }
 
     public void playF(View v) {
         Log.d("Xylophone", "Green Button Clicked");
+
+        mSoundPool.play(mFSoundId, LEFT_VOLUME, RIGHT_VOLUME, PRIORITY, NO_LOOP, NORMAL_PLAY_RATE);
     }
 
     public void playG(View v) {
         Log.d("Xylophone", "Teal Button Clicked");
+
+        mSoundPool.play(mGSoundId, LEFT_VOLUME, RIGHT_VOLUME, PRIORITY, NO_LOOP, NORMAL_PLAY_RATE);
     }
 
     public void playA(View v) {
         Log.d("Xylophone", "Blue Button Clicked");
+
+        mSoundPool.play(mASoundId, LEFT_VOLUME, RIGHT_VOLUME, PRIORITY, NO_LOOP, NORMAL_PLAY_RATE);
     }
 
     public void playB(View v) {
         Log.d("Xylophone", "Purple Button Clicked");
+
+        mSoundPool.play(mBSoundId, LEFT_VOLUME, RIGHT_VOLUME, PRIORITY, NO_LOOP, NORMAL_PLAY_RATE);
     }
 
 
